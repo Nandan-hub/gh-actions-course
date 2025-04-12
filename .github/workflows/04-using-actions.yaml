@@ -1,12 +1,12 @@
 name: 04 - Using Actions
 
-on: push
+on: workflow_dispatch
 
 jobs:
     build:
         runs-on : ubuntu-latest
         defaults:
-            runs:
+            run:
                 working-directory: .github/workflows/04-using-actions/react-app
         steps:
             - name: Checkout code
